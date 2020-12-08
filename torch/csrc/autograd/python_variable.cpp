@@ -44,6 +44,10 @@ namespace py = pybind11;
 
 PyObject *THPVariableClass = nullptr;
 
+// NOLINTNEXTLINE(cppcoreguidelines-avoid-non-const-global-variables)
+PyObject *ParameterClass = nullptr;
+
+
 static const char* VOLATILE_WARNING =
     "volatile was removed and now has no effect. Use "
     "`with torch.no_grad():` instead.";
